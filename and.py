@@ -1,4 +1,4 @@
-from allutils import prepare_data
+from utils.all_utils import prepare_data
 
 from utils.model import Perceptron
 import pandas as pd
