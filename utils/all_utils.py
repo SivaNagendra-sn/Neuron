@@ -7,7 +7,14 @@ import matplotlib.pyplot as plt
 
 
 def prepare_data(df):
+  """It is used to separate the Independant and target Variables
 
+  Args:
+      df ([Pd.Dataframe]): [Its a Pandas Dataframe]
+
+  Returns:
+      tuple: [It returns the tuple of Independant and target variables]
+  """
   X = df.drop("y", axis=1)
 
   y = df["y"]
@@ -15,12 +22,25 @@ def prepare_data(df):
   return X, y
 
 def save_model(model, filename):
+  """[This saves the trained model]
+
+  Args:
+      model ([python object]): [Trained model]
+      filename ([str]): [Path to the save the trained model]
+  """
   model_dir = "models"
   os.makedirs(model_dir, exist_ok=True) # ONLY CREATE IF MODEL_DIR DOESN"T EXISTS
   filePath = os.path.join(model_dir, filename) # model/filename
   joblib.dump(model, filePath)
 
 def save_plot(df, file_name, model):
+  """[summary]
+
+  Args:
+      df ([type]): [description]
+      file_name ([type]): [description]
+      model ([type]): [description]
+  """
   def _create_base_plot(df):
     df.plot(kind="scatter", x="x1", y="x2", c="y", s=100, cmap="winter")
     plt.axhline(y=0, color="black", linestyle="--", linewidth=1)

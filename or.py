@@ -6,7 +6,7 @@ import pandas as pd
 def main(data , eta, epochs, filename, plot_file_name):
     
 
-    df = pd.DataFrame(AND)
+    df = pd.DataFrame(OR)
 
     X,y = prepare_data(df)
 
