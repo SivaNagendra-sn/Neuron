@@ -1,11 +1,13 @@
+    """
+    author : Siva Nagendra
+    email : Sivanagendra.paruchuri@gmail.com
+    
+    """
 from utils.all_utils import prepare_data, save_model, save_plot
-
 from utils.model import Perceptron
 import pandas as pd
 
 def main(data , eta, epochs, filename, plot_file_name):
-    
-
     df = pd.DataFrame(AND)
 
     X,y = prepare_data(df)
