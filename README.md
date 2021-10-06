@@ -3,7 +3,7 @@ Building perceptron from scratch, building models for AND, OR gates. All code is
 
 ## Python package
 This code has been converted to python PyPI package. Refer
-[Neuron PyPI](https://pypi.org/project/Neuron-pypi-SivaNagendra-sn/0.0.1/)
+[Neuron PyPI](https://pypi.org/project/Neuron-pypi-SivaNagendra-sn/)
 
 Anyone can download and train a perceptron model with own datasets.
 
